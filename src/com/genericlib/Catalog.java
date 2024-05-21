@@ -1,4 +1,4 @@
-package genericLibraryCatalog;
+package com.genericlib;
 
 import java.util.HashMap;
 

@@ -1,4 +1,5 @@
-package genericLibraryCatalog;
+package com.genericlib;
+
 
 public class LibraryItem<T> {
 	private String title;
