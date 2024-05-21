@@ -14,11 +14,23 @@ public class Catalog<T extends LibraryItem> {
 		items.add(item);
 	}
 	
-	public void removeItem(int itemID) {
+	public boolean removeItem(int itemID) {
 		for (T item : items) {
 			if (item.getItemID() == itemID) {
 				items.remove(item);
-				System.out.println("Item removed.");
+				return true;
+			} 
+		}
+		return false;
+	}
+	
+	public void displayCatalog() {
+		if (items.isEmpty()) {
+			System.out.println("Catalog is empty");
+		} else {
+			System.out.println("Catalog:");
+			for (T item : items) {
+				System.out.println(item);
 			}
 		}
 	}

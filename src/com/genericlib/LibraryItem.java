@@ -14,4 +14,13 @@ public class LibraryItem<T> {
 	public int getItemID() {
 		return itemID;
 	}
+	
+	@Override
+    public String toString() {
+        return "LibraryItem{" +
+                "title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", itemID=" + itemID +
+                '}';
+    }
 }
