@@ -1,23 +1,25 @@
 package com.genericlib;
 
-import java.util.HashMap;
+import java.util.ArrayList;
+import java.util.List;
 
-public class Catalog<T> {
-	private HashMap<Integer, T> items;
+public class Catalog<T extends LibraryItem> {
+	private List<T> items;
 	
 	public Catalog() {
-		this.items = new HashMap<>();
+		this.items = new ArrayList<>();
 	}
 	
-	public void addItem(int itemID, T item) {
-		items.put(itemID, item);
+	public void addItem(T item) {
+		items.add(item);
 	}
 	
-	public T removeItem(int itemID) {
-		return items.remove(itemID);
-	}
-	
-	public T getItem(int itemID) {
-		return items.get(itemID);
+	public void removeItem(int itemID) {
+		for (T item : items) {
+			if (item.getItemID() == itemID) {
+				items.remove(item);
+				System.out.println("Item removed.");
+			}
+		}
 	}
 }

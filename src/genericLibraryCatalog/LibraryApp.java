@@ -1,5 +1,6 @@
 package genericLibraryCatalog;
 
+import com.genericlib.*;
 import textio.TextIO;
 
 public class LibraryApp {

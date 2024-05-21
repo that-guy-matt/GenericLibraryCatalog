@@ -1,6 +1,5 @@
 package com.genericlib;
 
-
 public class LibraryItem<T> {
 	private String title;
 	private String author;
@@ -10,5 +9,9 @@ public class LibraryItem<T> {
 		this.title = title;
 		this.author = author;
 		this.itemID = itemID;
+	}
+	
+	public int getItemID() {
+		return itemID;
 	}
 }
