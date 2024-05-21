@@ -3,6 +3,10 @@ package genericLibraryCatalog;
 import com.genericlib.*;
 import textio.TextIO;
 
+/**
+ * This class represents a simple library application for managing library items.
+ * Users can add, remove, and view library items via a command-line interface.
+ */
 public class LibraryApp {
 
 	public static void main(String[] args) {
