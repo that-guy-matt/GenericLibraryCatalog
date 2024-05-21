@@ -19,6 +19,7 @@ public class LibraryApp {
             
             switch (choice) {
 	            case 1:
+	            	TextIO.getln(); // not having this line breaks the program... not sure why
 	            	System.out.print("Enter title: ");
 	            	String title = TextIO.getln();
 	            	System.out.print("\nEnter author: ");
